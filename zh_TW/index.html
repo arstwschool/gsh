@@ -1,0 +1,294 @@
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖食計畫 - 首頁</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        img.bgt {
+            pointer-events: none;
+            user-select: none;
+        }
+
+        img.bgtf {
+            width: 100%;
+            pointer-events: none;
+            user-select: none;
+            background-color: #eccd48;
+            padding-bottom: 20px;
+            box-shadow: 0 0 32px 32px #eccd48;
+        }
+
+        img.bgtb {
+            width: 50%;
+            margin: 0 25%;
+            position: relative;
+            margin-bottom: calc(-50vw - 50px);
+            top: calc(-50vw - 20px);
+            left: 0;
+            animation: boardani .8s;
+        }
+
+        img.stit {
+            width: 22.5%;
+            margin-left: 50%;
+            margin-top: 64px;
+            transform: translateX(-50%);
+        }
+
+        img.stit2 {
+            width: 100%;
+        }
+
+        a:has(img.stit2) {
+            width: calc(50% - 1vw);
+            margin: 1vw;
+            display: block;
+            float: left;
+        }
+
+        div.aarea {
+            width: 70vw;
+            margin: 0 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>a:nth-child(2) {
+                float: right;
+                padding: 1vw 0;
+            }
+
+            &>a:hover {
+                background-color: #0002;
+            }
+
+            &>a:active {
+                filter: brightness(1.2);
+            }
+
+            &>a {
+                border-radius: 20px;
+                transition: .25s;
+            }
+        }
+
+        div.picarea {
+            width: 34vw;
+            height: 20vw;
+            float: right;
+            margin: 0 15vw;
+            font-size: 2vw;
+            padding: 11vw 2.5vw 0vw 7vw;
+            text-overflow: ellipsis;
+            background-image: url(/gsh2024/assets/img/IMG-2065.png);
+            background-size: 100% 100%;
+            color: #000;
+        }
+
+        div.greenarea1 {
+            width: 80vw;
+            height: 30vw;
+            background-image: url(/gsh2024/zh_TW/img/IMG-2139.png);
+            background-size: 80vw 30vw;
+            margin: 2.5vw 10vw;
+            transition: .25s;
+        }
+
+        div.greenarea2 {
+            width: 80vw;
+            height: 40vw;
+            background-image: url(/gsh2024/zh_TW/img/IMG-2140.png);
+            background-size: 80vw 40vw;
+            margin: 0 10vw;
+            transition: .25s;
+        }
+
+        div.greenarea3 {
+            background-image: url(/gsh2024/zh_TW/img/IMG-2141.png);
+            width: 80vw;
+            height: 40vw;
+            background-size: 80vw 40vw;
+            margin: 0 10vw;
+            transition: .25s;
+        }
+
+        div.greenarea4 {
+            background-image: url(/gsh2024/zh_TW/img/IMG-2142.png);
+            margin: 0 10vw;
+            width: 80vw;
+            height: 40vw;
+            background-size: 80vw 40vw;
+            transition: .25s;
+        }
+
+        div.greenarea5 {
+            width: 80vw;
+            height: 40vw;
+            background-image: url(/gsh2024/zh_TW/img/IMG-2143.png);
+            background-size: 80vw 40vw;
+            margin: 0 10vw;
+            transition: .25s;
+        }
+
+        div.greenarea1:hover,
+        div.greenarea2:hover,
+        div.greenarea3:hover,
+        div.greenarea4:hover,
+        div.greenarea5:hover {
+            filter: brightness(.8);
+        }
+
+        div.greenarea1:active,
+        div.greenarea2:active,
+        div.greenarea3:active,
+        div.greenarea4:active,
+        div.greenarea5:active {
+            filter: brightness(.8) drop-shadow(0 0 8px #0008);
+        }
+
+        div.bbgpic {
+            width: 70vw;
+            height: 29vw;
+            background-image: url(/gsh2024/assets/img/IMG-2077.png);
+            background-size: 80vw 45vw;
+            margin: 0 10vw;
+            padding-top: 16vw;
+            padding-left: 6vw;
+            padding-right: 4vw;
+
+            &>div.text {
+                width: calc(50% - 3vw);
+                float: right;
+                font-size: 2vw;
+                color: #666;
+            }
+
+            &>img {
+                width: 50%;
+            }
+        }
+
+        img.ricepic {
+            float: right;
+            margin-top: 32vw;
+            height: calc(64vw + 40px);
+            pointer-events: none;
+        }
+
+        img.movimg {
+            float: left;
+            margin-bottom: -29vw;
+            width: 40vw;
+            margin-left: 12vw;
+            border-radius: 15% 40%;
+        }
+
+        @keyframes boardani {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!--<input placeholder="Sample">
+        <div class="input-wrapper">
+            <input class="float-text" placeholder=" ">
+            <label class="placeholder-label">Sample</label>
+        </div>-->
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/zh_TW/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> 選單</button>
+            <button id="call_setting"> 設定</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 新增筆記</button>
+            <button id="languagebt"> 變更語言</button>
+            <div id="clock">上午00:00:00<br>1900/01/01</div>
+        </div>
+        <img src="/gsh2024/assets/img/mp1.png" class="bgt bgtf">
+        <img src="/gsh2024/zh_TW/img/mpt.png" class="bgtb bgt">
+        <img src="/gsh2024/zh_TW/img/IMG-1802.png" class="bgt stit">
+        <a href="/gsh2024/zh_TW/motivation/">
+            <img class="movimg" src="/gsh2024/assets/img/01.jpg"></img>
+            <div class="picarea">
+                在新生訓練時收到學長姐發到班級的聖食志工參與表，並實際加入體驗過後，我們發現這是一件很有意義的事
+                <br>
+                然而...
+            </div>
+        </a>
+        <img src="/gsh2024/zh_TW/img/IMG-1815.png" class="bgt stit">
+        <a href="web/history/">
+            <div class="greenarea1"></div>
+        </a>
+        <a href="web/reality/">
+            <div class="greenarea2"></div>
+        </a>
+        <a href="web/analysis/">
+            <div class="greenarea3"></div>
+        </a>
+        <a href="web/recommands/">
+            <div class="greenarea4"></div>
+        </a>
+        <a href="web/another/">
+            <div class="greenarea5"></div>
+        </a>
+        <a href="briefing/">
+            <img src="/gsh2024/zh_TW/img/IMG-1839.png" class="stit">
+            <div class="bbgpic">
+                <img src="/gsh2024/assets/img/04.jpg">
+                <div class="text">
+                    經過了這趟奇幻的旅程，我想說...
+                </div>
+            </div>
+        </a>
+        <div class="aarea">
+            <a href="references/">
+                <img src="/gsh2024/zh_TW/img/IMG-1902.png" class="stit2">
+            </a>
+            <a href="narrative/">
+                <img src="/gsh2024/zh_TW/img/IMG-1905.png" class="stit2">
+            </a>
+            </a>
+        </div>
+        <div class="aarea">
+            <a href="narrative/overview/">
+                <img src="/gsh2024/zh_TW/img/IMG-1903.png" class="stit2">
+            </a>
+            <a href="narrative/elements/">
+                <img src="/gsh2024/zh_TW/img/IMG-1904.png" class="stit2">
+            </a>
+        </div>
+        <div class="aarea">
+            <a href="narrative/contribution/">
+                <img src="/gsh2024/zh_TW/img/IMG-1906.png" class="stit2">
+            </a>
+        </div>
+    </main>
+    <!--<div class="bottombar">
+        <button id="call_menu"> MENU</button>
+        <button id="call_setting"> SETTING</button>
+        <button id="help">❓ 幫助</button>
+        <div id="note_table">
+            <div id="note_list"></div>
+        </div>
+        <button id="call_note">📓 新增筆記</button>
+        <button id="languagebt"> 變更語言</button>
+        <div id="clock">上午00:00:00<br>1900/01/01</div>
+    </div>-->
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "alert": {
+        "lang": "Language Switch Prompt",
+        "resolution": "Insufficient Resolution Prompt",
+        "browser": "Recommended Browser Prompt"
+    },
+    "block": {
+        "gshad": "Display the Link of Cyberfair",
+        "clock": "Display Clock Block",
+        "lang": "Display Language Switch Button",
+        "note": "Display Add Note Button"
+    },
+    "beta": {
+        "window": "Do Not Close Window When Switching Pages"
+    }
+}

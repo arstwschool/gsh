@@ -1,0 +1,149 @@
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖食計畫 - 分析</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2158.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        div.yellowtitle {
+            background-color: #ffe543;
+            padding: 0.5vw 3vw;
+            width: max-content;
+            height: max-content;
+            font-size: 3vw;
+            margin: -2vw 5vw;
+            margin-top: 3vw;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        div.wb1 {
+            background-image: url(/gsh2024/assets/img/IMG-2072.jpg);
+            background-size: 100% 100%;
+            width: 70vw;
+            height: 60vw;
+
+            &>div.chartarea {
+                float: right;
+                margin-right: 1vw;
+                margin-top: 3vw;
+
+                &>img {
+                    width: 30vw;
+                    height: 21.75vw;
+                    margin-right: 1vw;
+                    user-select: none;
+                    border: 2px dashed #999;
+                }
+            }
+
+            &>div.text {
+                width: 30vw;
+                float: right;
+                margin-right: 1vw;
+                font-size: 2vw;
+            }
+
+            &>img.cbt {
+                width: 30vw;
+                float: right;
+                border: 2px dashed #999;
+                margin-right: 2vw;
+            }
+        }
+
+        div.wb2 {
+            background-image: url(/gsh2024/assets/img/IMG-2073.jpg);
+            background-size: 100% 100%;
+            width: 76vw;
+            height: max-content;
+            float: right;
+            margin-bottom: 10vw;
+            padding: 2vw;
+
+            &>div.chartarea {
+                float: left;
+                margin-top: 3vw;
+
+                &>img {
+                    width: 30vw;
+                    height: 21.75vw;
+                    user-select: none;
+                    border: 2px dashed #999;
+                    margin-right: 1vw;
+                }
+            }
+
+            &>div.text {
+                width: 72vw;
+                float: left;
+                font-size: 2vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/zh_TW/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> 選單</button>
+            <button id="call_setting"> 設定</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 新增筆記</button>
+            <button id="languagebt"> 變更語言</button>
+            <div id="clock">上午00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">分析</div>
+        <div class="yellowtitle">社會與自然組之區別</div>
+        <div class="wb1">
+            <div class="chartarea">
+                <img src="/gsh2024/assets/img/IMG-2124.jpg" alt="">
+                <img src="/gsh2024/assets/img/IMG-2125.jpg" alt="">
+            </div>
+            <img src="/gsh2024/assets/img/IMG-2126.jpg" class="cbt">
+            <div class="text">
+                社會組在與自然組相比之下，自然組高達74.2%覺得午餐菜量不夠，而社會組只有11.5%。社會組在午餐各方面對於量的需求感到不足之比例明顯低於自然組。
+                <br>
+                這或許與班級組成之成員有相關聯，像是自然組男生較多因此食量較大，社會組則是相反。或許可以根據男女比例調整菜量而不單單只靠人數分配。
+            </div>
+        </div>
+        <div class="yellowtitle" style="float: right;">菜樣喜歡與否分析</div>
+        <div class="wb2">
+            <div class="chartarea">
+                <img src="/gsh2024/assets/img/IMG-2127.jpg" style="width: 40vw;" alt="">
+                <img src="/gsh2024/assets/img/IMG-2128.jpg" alt="">
+            </div>
+            <div class="text">
+                從這兩份圖表可得知學生們最常吃完的是蛋類，接著是其他類，包含了甜筒、饅頭這類特殊食物。其次是肉類。可能是因為學生平均而言最喜歡蛋，肉類則是大部分喜歡。
+            </div>
+            <div class="text">
+            <hr>
+                學生喜愛菜色前五名中，討厭榜上有四項是菜類，也就是為什麼在圖四中菜類的剩菜量會最高了。
+                <br>
+                配合圖二，雖然喜歡蔬菜的比例與前兩名平分秋色，但也有不少人最討厭的是蔬菜，這或許男女之間的差異有關，又或是大家只喜歡特定的蔬菜。
+                <br>
+                而魚雖然是肉類，卻出現在討厭榜上第三名。可能是因為魚類常常有刺導致學生們不願意吃。
+                <br><br>
+                喜愛榜上高麗菜為第五名，往後或許可以多增加高麗菜的出現次數。
+            </div>
+            <div class="chartarea" style="width: 100%;">
+                <img src="/gsh2024/zh_TW/img/IMG-2250.jpg" style="width: 25vw; border: 0; margin: 0 50%; transform: translateX(-50%);" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+</body>
+
+</html>

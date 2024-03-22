@@ -1,0 +1,90 @@
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖食計畫 - 專題資訊</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2221.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        img.uhr,
+        img.dhr {
+            width: 80vw;
+            margin: 2.5vw 10vw;
+            user-select: none;
+        }
+        div.infoframe {
+            max-width: 80vw;
+            margin: 0 10vw;
+            font-size: 2vw;
+            font-family: sans-serif, 'segoe UI Symbol';
+        }
+        div.infoframe * {
+            font-family: sans-serif, 'segoe UI Symbol';
+        }
+
+        img.gp {
+            border-radius: 50%;
+            border: .5vw dashed #84ae44;
+            float: right;
+            height: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/zh_TW/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> 選單</button>
+            <button id="call_setting"> 設定</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 新增筆記</button>
+            <button id="languagebt"> 變更語言</button>
+            <div id="clock">上午00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">專題資訊</div>
+        <img src="/gsh2024/assets/img/IMG-1937.png" alt="" class="uhr">
+        <div class="infoframe">
+            <img src="/gsh2024/assets/img/team_photo.jpg" class="gp">
+            參賽作品首頁：<a href="/gsh2024/">網博主機</a>
+            <br>
+            學校首頁：<a href="https://www3.hwsh.tc.edu.tw/home">臺中市立惠文高級中學</a>
+            <br>
+            專題研究計劃完成日：2024/02/28
+            <br>
+            學&#x3000;校：<a href="https://www3.hwsh.tc.edu.tw/home">臺中市立惠文高級中學</a>
+            <br>
+            縣&#x3000;市：<a href="https://www.google.com/maps/place/%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8D%80/data=!4m2!3m1!1s0x34693e7eac5b081b:0x3f14e4f431b7bd29?sa=X&ved=2ahUKEwivxqH_ys2EAxXx0DQHHWVWC6QQ8gF6BAgXEAA">臺中市南屯區</a>
+            <br>
+            指導老師：黃智仁、蔡淇華
+            <br>
+            參與學生人數：8人
+            <br>
+            學生平均年齡：17歲
+            <br>
+            專題研究計劃聯絡E-mail信箱：<a href="mailto:juren@mail3.hwsh.tc.edu.tw">&#xE119;&nbsp;juren@mail3.hwsh.tc.edu.tw</a>
+        </div>
+        <img src="/gsh2024/assets/img/IMG-1938.png" alt="" class="dhr">
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+    <script>
+        document.querySelectorAll('a').forEach(e=>{
+            e.onclick = function () {
+                window.open(e.href, 'Bowser', config="height=450, width=800, location=no")
+                return false;
+            }
+        })
+    </script>
+</body>
+
+</html>

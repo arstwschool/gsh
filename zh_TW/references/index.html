@@ -1,0 +1,91 @@
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖食計畫 - 文獻資料</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2219.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        @font-face {
+            font-family: "nummarker";
+            src: url("../../assets/gshNums.woff2") format("truetype"),
+                url("../../assets/gshNums.woff2") format("opentype"),
+                url("../../assets/gshNums.woff2") format("embedded-opentype");
+        }
+
+        div.frame {
+            width: 70vw;
+            margin: 0 15vw;
+        }
+
+        main ul>li::marker {
+            content: '\E03F';
+            font-family: nummarker;
+            color: #fba14d;
+            font-size: 3vw;
+        }
+
+        main ul * {
+            font-size: 2vw;
+        }
+
+        .tpic {
+            display: block;
+            margin: auto;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/zh_TW/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> 選單</button>
+            <button id="call_setting"> 設定</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 新增筆記</button>
+            <button id="languagebt"> 變更語言</button>
+            <div id="clock">上午00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">文獻資料</div>
+        <div class="frame">
+            <br>
+            <img src="/gsh2024/assets/img/40.jpg" class="t" style="box-shadow: .5vw .5vw 1vw 0 #0008;width: 30vw;display: block;margin: auto;">
+            <ul>
+                <li>沈盈盈(譯)(2022)。SDGs：我們想要的未來(2022增訂版)：17項永續發展目標＆國際實踐範例(原作者:蟹江憲史監修)。幸福綠光出版社。</li>
+                <li>陳令嫻(譯)(2022)。地方創生×SDGs的實踐指南：孕育人與經濟的生態圈，創造永續經營的地方設計法(原作者: 筧裕介)。裏路文化出版社。</li>
+                <li>楊子毅(2023年三月)品牌 x SDGs 全球鎖定17項永續指標。動腦雜誌，(563)。</li>
+                <li><a href="https://www.mdnkids.com/youngelite/calendar_year/2016_soc_01.html">推動剩食變聖食計畫
+                        楊淳晏、拾璿佾助街友溫飽-兒少好young人物報導</a></li>
+                <li><a href="https://about.pts.org.tw/pr/latestnews/article/3573">16歲高中生發起「聖食計畫」幫助街友
+                        連舒淇也大讚「好樣的」-公共電視報導</a></li>
+                <li><a href="https://flipedu.parenting.com.tw/article/002784">【青春正能量】蔡淇華：在品格的鷹架上，向世界提案-翻轉教育專題</a></li>
+                <li><a href="https://www.youtube.com/watch?v=oiYdlxAWdgo">【專題 食農教育2】惠文高中聖食計畫《青春發言人》-公共電視兒少頻道報導</a></li>
+                <li><a href="https://news.tvbs.com.tw/fun/716052">營養午餐溫飽街友 16歲的他「讓剩食變聖食」-TVBS新聞網報導</a></li>
+            </ul>
+        </div>
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+    <script>
+        document.querySelectorAll('a').forEach(e => {
+            e.onclick = function () {
+                window.open(e.href, 'Bowser', config = "height=450, width=800, location=no")
+                return false;
+            }
+        })
+    </script>
+</body>
+
+</html>

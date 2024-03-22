@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2158.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        div.yellowtitle {
+            background-color: #ffe543;
+            padding: 0.5vw 3vw;
+            width: max-content;
+            height: max-content;
+            font-size: 2vw;
+            margin: -2vw 5vw;
+            margin-top: 3vw;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        div.wb1 {
+            background-image: url(/gsh2024/assets/img/IMG-2073.jpg);
+            background-size: 100% 100%;
+            width: 70vw;
+            height: max-content;
+            display: flex;
+            padding-bottom: 1vw;
+
+            & img {
+                width: 30vw;
+                height: 21.75vw;
+                margin-right: 1vw;
+                user-select: none;
+                border: 2px dashed #999;
+            }
+
+            &>div.text {
+                width: 30vw;
+                float: left;
+                margin-left: 6vw;
+                font-size: 1.5vw;
+                margin-top: 5vw;
+                text-align: justify;
+                text-align-last: left;
+                padding-right: 1vw;
+            }
+
+            & img.cbt {
+                width: 30vw;
+                border: 2px dashed #999;
+                margin-right: 2vw;
+                height: max-content;
+                margin-top: 5vw;
+            }
+        }
+
+        div.wb2 {
+            background-image: url(/gsh2024/assets/img/IMG-2073.jpg);
+            background-size: 100% 100%;
+            width: 76vw;
+            height: max-content;
+            float: right;
+            margin-bottom: 10vw;
+            padding: 2vw;
+
+            &>div.chartarea {
+                float: left;
+                margin-top: 3vw;
+
+                &>img {
+                    width: 30vw;
+                    height: 21.75vw;
+                    user-select: none;
+                    border: 2px dashed #999;
+                    margin-right: 1vw;
+                }
+            }
+
+            &>div.text {
+                width: 72vw;
+                float: left;
+                font-size: 1.5vw;
+                text-align: justify;
+                text-align-last: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/en/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> MENU</button>
+            <button id="call_setting"> SETTING</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 NOTE</button>
+            <button id="languagebt"> LANGUAGE</button>
+            <div id="clock">A.M.00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">Analysis</div>
+        <div class="yellowtitle">The difference between the social study group and science study group.</div>
+        <div class="wb1">
+            <div class="text">
+                When compared to the science study group, a high percentage of 74.2% of the science study group feels
+                that the lunch portion is insufficient, while only 11.5% of the Social group feels the same. The social
+                study group's proportion of dissatisfaction with the lunch portion in various aspects is significantly
+                lower than that of the science study group.
+                <br><br>
+                This may be related to the composition of the class groups, such as the higher number of boys in the
+                science study group resulting in larger appetites, whereas the opposite is true for the social study
+                group. Adjusting portion sizes based on gender ratios rather than solely relying on headcount
+                distribution may be a potential solution. (See Figure 1)
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <img src="/gsh2024/en/img/IMG-2024.jpg" alt="" class="cbt">
+                <img src="/gsh2024/en/img/IMG-2025.jpg" class="cbt">
+            </div>
+        </div>
+        <div class="yellowtitle" style="float: right;">Analysis of preferences for different types of vegetables</div>
+        <div class="wb2">
+            <div class="chartarea">
+                <img src="/gsh2024/en/img/IMG-2127.jpg" style="width: 40vw;" alt="">
+                <img src="/gsh2024/en/img/IMG-2128.jpg" alt="">
+            </div>
+            <div class="text">
+                From these two charts, it can be observed that students finish eggs mostly, followed by other
+                categories, which include special foods such as ice cream cones and steamed buns. Meat products come
+                next in line. This might be attributed to eggs being the most preferred choice on average among
+                students, while meat products are generally favored by the majority. (See Figures 2 and 3)
+            </div>
+            <div class="text">
+                <hr>
+                Among the top five favorite dishes of students, four items on the least favorite list are vegetable
+                dishes, which explains why there is the highest leftover amount for vegetable dishes in Figure 4.
+                Considering Figure 2, although the proportion of students who like vegetables is on par with the top two
+                choices, there are still many who dislike vegetables. This difference might be related to gender, or
+                perhaps students only enjoy specific types of vegetables.
+                <br><br>
+                While fish is categorized as meat, it ranks third on the least favorite list. This could be due to the
+                presence of bones in fish, making students reluctant to eat it.Cabbage ranks fifth on the favorite list.
+                In the future, increasing the frequency of cabbage dishes might be beneficial. (See Figure 4)
+            </div>
+            <div class="chartarea">
+                <img src="/gsh2024/en/img/IMG-2250.jpg" style="width: 70vw; border: 0;" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrative</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2221.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        img.uhr,
+        img.dhr {
+            width: 80vw;
+            margin: 2.5vw 10vw;
+            user-select: none;
+        }
+        div.infoframe {
+            max-width: 80vw;
+            margin: 0 10vw;
+            font-size: 1.7vw;
+            font-family: sans-serif, 'segoe UI Symbol';
+        }
+        div.infoframe * {
+            font-family: sans-serif, 'segoe UI Symbol';
+        }
+
+        img.gp {
+            border-radius: 50%;
+            border: .5vw dashed #84ae44;
+            float: right;
+            height: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/en/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> MENU</button>
+            <button id="call_setting"> SETTING</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 NOTE</button>
+            <button id="languagebt"> LANGUAGE</button>
+            <div id="clock">A.M.00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">Narrative</div>
+        <img src="/gsh2024/assets/img/IMG-1937.png" alt="" class="uhr">
+        <div class="infoframe">
+            <img src="/gsh2024/assets/img/team_photo.jpg" class="gp">
+            Project Website:<a href="/gsh2024/">Click Here</a>
+            <br>
+            Category: 7. Environmental Awareness
+            <br>
+            School:
+            <br><a href="https://www3.hwsh.tc.edu.tw/home">Taichung Municipal Hui-Wen High School</a>
+            <br>
+            Accomplish Date: 2024/02/28
+            <br>
+            Location:<a href="https://www.google.com/maps/place/%E8%87%BA%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8D%80/data=!4m2!3m1!1s0x34693e7eac5b081b:0x3f14e4f431b7bd29?sa=X&ved=2ahUKEwivxqH_ys2EAxXx0DQHHWVWC6QQ8gF6BAgXEAA">Nan-tun District, Taichung City</a>
+            <br>
+            Instructor: 
+            <br>CHIH-JEN HUANG, CHI-HUA TSAI
+            <br>
+            Number of students: 8 students
+            <br>
+            Student's age: 16-17 years old
+            <br>
+            E-Mail Address: <a href="mailto:juren@mail3.hwsh.tc.edu.tw">&#xE119;&nbsp;juren@mail3.hwsh.tc.edu.tw</a>
+        </div>
+        <img src="/gsh2024/assets/img/IMG-1937.png" alt="" class="dhr">
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+    <script>
+        document.querySelectorAll('a').forEach(e=>{
+            e.onclick = function () {
+                window.open(e.href, 'Bowser', config="height=450, width=800, location=no")
+                return false;
+            }
+        })
+    </script>
+</body>
+
+</html>

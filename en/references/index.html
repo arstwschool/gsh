@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="/gsh2024/assets/main.css">
+    <link rel="shortcut icon" href="/gsh2024/assets/img/favicon.png">
+    <style>
+        div.banner {
+            background: url(/gsh2024/assets/img/IMG-2219.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        @font-face {
+            font-family: "nummarker";
+            src: url("../../assets/gshNums.woff2") format("truetype"),
+                url("../../assets/gshNums.woff2") format("opentype"),
+                url("../../assets/gshNums.woff2") format("embedded-opentype");
+        }
+
+        div.frame {
+            width: 70vw;
+            margin: 0 15vw;
+        }
+
+        main ul>li::marker {
+            content: '\E03F';
+            font-family: nummarker;
+            color: #fba14d;
+            font-size: 3vw;
+        }
+
+        main ul * {
+            font-size: 2vw;
+        }
+
+        .tpic {
+            display: block;
+            margin: auto;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topbar">
+            <a href="/gsh2024/"><img src="/gsh2024/en/img/maintitle.png" class="bgt"></a>
+            <button id="call_menu"> MENU</button>
+            <button id="call_setting"> SETTING</button>
+            <div id="note_table">
+                <div id="note_list"></div>
+            </div>
+            <button id="call_note">📓 NOTE</button>
+            <button id="languagebt"> LANGUAGE</button>
+            <div id="clock">A.M.00:00:00<br>1900/01/01</div>
+        </div>
+        <div class="banner">References</div>
+        <div class="frame">
+            <br>
+            <ul>
+                <img src="/gsh2024/assets/img/40.jpg" class="t" style="box-shadow: .5vw .5vw 1vw 0 #0008;width: 30vw;display: block;margin: auto;">
+                <li>Shen, Y. (Translator). (2022). SDGs: Our Desired Future (2022 Revised Edition): 17 Sustainable
+                    Development Goals & International Practice Examples. Happiness Greenlight Publishing.</li>
+                <li>Chen, L. (Translator). (2022). Practice Guide for Local Revitalization × SDGs: Nurturing an
+                    Ecological Circle of People and Economy, Creating Sustainable Local Design Methods. Liru Cultural
+                    Publishing.</li>
+                <li>Yang, Z. (March 2023). Brand x SDGs: Global Focus on 17 Sustainable Indicators. Brainstorm Magazine,
+                    (563).</li>
+                <li><a href="https://www.mdnkids.com/youngelite/calendar_year/2016_soc_01.html">Promoting the
+                        'Transforming Surplus into Sacred Meals' Project: Yang Chun-Yan and Xuan Yi Assist Homeless
+                        Youths - Youthful Figure Report</a></li>
+                <li><a href="https://about.pts.org.tw/pr/latestnews/article/3573">16-Year-Old High School Student
+                        Initiates 'Sacred Food Project' to Aid the Homeless; Even Shu Qi Applauds, 'Well Done' - Public
+                        Television Service Report</a></li>
+                <li><a href="https://flipedu.parenting.com.tw/article/002784">【Youthful Positive Energy】Cai Qi-Hua:
+                        Proposing to the World on the Scaffold of Character - FLIPPED EDUCATION Feature</a></li>
+                <li><a href="https://www.youtube.com/watch?v=oiYdlxAWdgo">【Special Feature on Food and Farming Education
+                        2】Sacred Food Project at Huimin High School in "Youth Spokesperson" - Public Television Service
+                        Children's Channel Report</a></li>
+                <li><a href="https://news.tvbs.com.tw/fun/716052">Nutritious Lunch Ensures Fullness for the Homeless -
+                        16-Year-Old Makes 'Surplus Food Sacred' - TVBS News Report</a></li>
+            </ul>
+        </div>
+    </main>
+    <script src="/gsh2024/assets/system.js" type="module"></script>
+    <script src="/gsh2024/assets/taskbar.js" type="module"></script>
+    <script src="/gsh2024/assets/main.js"></script>
+    <script>
+        document.querySelectorAll('a').forEach(e => {
+            e.onclick = function () {
+                window.open(e.href, 'Bowser', config = "height=450, width=800, location=no")
+                return false;
+            }
+        })
+    </script>
+</body>
+
+</html>
